@@ -1,5 +1,4 @@
 # Wireshark Packet Analysis Project
-**Cybersecurity Domain — Dissecting Packets: From HTTP to TLS**
 
 ---
 
@@ -11,20 +10,18 @@ A hands-on packet analysis exercise using Wireshark. The goal was to capture and
 
 ## What's Included
 
-| File | Description |
-|---|---|
+|           File           |                         Description                         |
+|--------------------------|-------------------------------------------------------------|
 | `Wireshark_Project.docx` | Full report with screenshots, packet analysis, and findings |
-| `capture.pcap` | Raw Wireshark capture file from the exercise |
-| `README.md` | This file |
+|      `capture.pcap`      | Raw Wireshark capture file from the exercise |
+|        `README.md`       | This file |
 
 ---
 
 ## What Was Captured
 
 **HTTP GET** — Plain-text requests to neverssl.com. Every header visible, no encryption.
-
 **DNS** — Query and response for domain resolution over UDP port 53. Includes an anomaly: repeated lookups for the same domain within seconds.
-
 **TLS Handshake** — Client Hello and Server Hello from an HTTPS connection to google.com. Cipher suite negotiated: `TLS_AES_256_GCM_SHA384`.
 
 ---
@@ -33,6 +30,3 @@ A hands-on packet analysis exercise using Wireshark. The goal was to capture and
 
 - Wireshark (capturing on `eth0`)
 - Display filters: `http.request.method == "GET"`, `dns`, `tls`
-
----
-
