@@ -36,6 +36,3 @@ A hands-on packet analysis exercise using Wireshark. The goal was to capture and
 
 ---
 
-## Submitted
-
-10 May 2026
